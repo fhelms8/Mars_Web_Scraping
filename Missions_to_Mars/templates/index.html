@@ -34,33 +34,72 @@
             <div class="col-12" style="height: 25%">
                 <h2 class="title display-5 text-center">Mars News</h2>
                 <p class="lead title2 text-center">{{scraped_info.news_title}} </p>
-                <p style='margin-inline: 30px;list-style: height 1.6em; text-align: justify'>{{scraped_info.news_p}}</p>
+                <p style='margin-inline: 30px;list-style-position: height 1.6em; text-align: justify'>{{scraped_info.news_p}}</p>
             </div>
         </div>
 
         <br>
 
         <!--Featured Mars Image-->
-       <div class="container">
+        <div class="container">
             <div class="row">
-            <div class="col-8">
-                <h2 class="title display-5 text-align">Featured Image</h2>
-                <hr class="image">
-                <img src="{{ scraped_info.featured_img_url }}" alt="Featured">
-            </div>
-        
-            <br>
-        <!--Table info-->
-    
-            <div class="card" style="width: 20rem" align="center">
-            <div class="card-body">
-                <h3 class="card-title">Mars vs Earth</h3>
-                <hr>
-                <p class="card-text" style='line-height:1.9; text-align: left;'>{{scraped_info.mars_table | safe}}</p>
+                <div class="col-8">
+                    <h2 class="title display-5 text-align">Featured Image</h2>
+                    <hr class="image">
+                    <img src="{{ scraped_info.featured_img_url }}" alt="Featured">
+                </div>
+
                 <br>
+                <!--Table info-->
+
+                <div class="card" style="width: 20rem" align="center">
+                    <div class="card-body">
+                        <h3 class="card-title">Mars vs Earth</h3>
+                        <hr>
+                        <p class="card-text" style='line-height:1.9; text-align: left;'>{{scraped_info.mars_table |
+                            safe}}</p>
+                        <br>
+                    </div>
+                </div>
             </div>
+            <!-- Mars Hemisphere Pictures-->
+            <div class="container-fluid">
+                <h2 class="text-center title">Mars Hemispheres</h2>
+                <div class="row style=" margin-top: 30px;>
+                    <div class="col-3">
+                        <div class="thumbnail">
+                            <img src="{{ scraped_info.hempisphere_img_urls[0]['img_url'] }}" alt="Cerberus" class="img-thumbnail">
+                            <div class="caption">
+                                <h4 class="text-center title3">{{ scraped_info.hempisphere_img_urls[0]['title'] }}</h4>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="thumbnail">
+                            <img src="{{ scraped_info.hempisphere_img_urls[1]['img_url'] }}" alt="Schiaparelli" class="img-thumbnail">
+                            <div class="caption">
+                                <h4 class="text-center title3">{{ scraped_info.hempisphere_img_urls[1]['title'] }}</h4>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="thumbnail">
+                            <img src="{{ scraped_info.hempisphere_img_urls[2]['img_url'] }}" alt="Sytris" class="img-thumbnail">
+                            <div class="caption">
+                                <h4 class="text-center title3">{{ scraped_info.hempisphere_img_urls[2]['title'] }}</h4>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="thumbnail">
+                            <img src="{{ scraped_info.hempisphere_img_urls[3]['img_url'] }}" alt="Valles" class="img-thumbnail">
+                            <div class="caption">
+                                <h4 class="text-center title3">{{ scraped_info.hempisphere_img_urls[0]['title'] }}</h4>
+                              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 </body>
 
 

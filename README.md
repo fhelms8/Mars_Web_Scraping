@@ -5,4 +5,4 @@ I felt that this was more difficult than the prior html page building, but after
 ##### As always, I welcome feedback. Have a lovely day.
 
 <img src=https://raw.githubusercontent.com/fhelms8/Web-Scraping-Challenge/main/Missions_to_Mars/Screenshots/html1.jpg>
-<img src=https://raw.githubusercontent.com/fhelms8/Web-Scraping-Challenge/main/Missions_to_Mars/Screenshots/html2.jpg>
+<img src=https://raw.githubusercontent.com/fhelms8/Web-Scraping-Challenge/main/Missions_to_Mars/Screenshots/html3.jpg>
